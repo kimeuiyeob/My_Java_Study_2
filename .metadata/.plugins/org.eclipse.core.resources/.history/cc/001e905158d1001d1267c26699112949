@@ -1,0 +1,18 @@
+Map<K,V> 컬렉션의 특징
+Map은 제네릭이 항상 2개이다.
+그이유는 항상 키와 밸류값으로 저장되기 때문에
+타입도 두개이다.
+
+-Key와 Value 한쌍 으로 데이터를 저장
+-key는 중복저장 불가, value는 중복 가능
+***Collection과는 별개의 interface임 (list,set과 기본 메서드가 다르다)***
+
+-Map의 종류-
+HashMap<K,V>
+LinkedHashMap<K,V>
+HashTable<K,V>
+TreeMap<K,V>
+
+-list는 인덱스에 갑을 저장하는데
+-map은 키에 값을 저장한다.
+

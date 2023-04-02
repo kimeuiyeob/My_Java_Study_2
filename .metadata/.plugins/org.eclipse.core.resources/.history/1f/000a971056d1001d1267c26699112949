@@ -1,0 +1,14 @@
+Set
+
+HashSet<E>
+-hashCode(), equals()를 통해 중복 체크
+-입력 순서 != 출력순서
+
+LinkedHashSet<E>
+-HashSet의 기본 기능 포함
+-입력순서 == 출력순서
+
+TreeSet
+-Set<E>의 기본 기능
+-정렬,검색 기능 추가
+-출력순서는 오름차순

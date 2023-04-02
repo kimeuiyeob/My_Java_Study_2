@@ -1,0 +1,22 @@
+package 컬렉션프레임워크맵;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapCollection2 {
+	
+	public static void main(String[] args) {
+		
+		Map<Integer, String> map1 = new HashMap<>();
+		map1.put(2, "나다라");
+		map1.put(4, "라마바");
+		map1.put(1, "가나다");
+		map1.put(3, "다라마");
+		map1.put(5, "바사아");
+		// 입력 순서랑 출력순서는 동일하지 않다.
+		
+		map1.replace(2, "가나다");
+		System.out.println(map1);
+	}
+
+}

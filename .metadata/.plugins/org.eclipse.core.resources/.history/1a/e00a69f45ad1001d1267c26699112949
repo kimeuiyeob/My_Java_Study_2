@@ -1,0 +1,31 @@
+package 컬렉션프레임워크맵;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class MapCollection3 {
+	public static void main(String[] args) {
+		
+		Map<Integer, String> map1 = new HashMap<>();
+		map1.put(2, "나다라");
+		map1.put(4, "라마바");
+		map1.put(1, "가나다");
+		map1.put(3, "다라마");
+		map1.put(5, "바사아");
+
+		System.out.println(map1);
+		
+		Set<Map.Entry<Integer,String>> entrySet = map1.entrySet();
+		System.out.println(entrySet);
+		
+		//키만 뽑아오고싶을때는 Set을 사용한다.
+		Set<Integer> setKey = map1.keySet();
+		System.out.println(setKey);
+		
+		Collection<String> setVal = map1.values();
+		System.out.println(setVal);
+	}
+
+}

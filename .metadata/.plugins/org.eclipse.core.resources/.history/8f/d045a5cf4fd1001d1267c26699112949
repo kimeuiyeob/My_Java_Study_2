@@ -1,0 +1,21 @@
+package 컬렉션프레임워크트리셋;
+
+public class MyComparableClass implements Comparable<MyComparableClass> {
+	int data1;
+	int data2;
+
+	public MyComparableClass(int data1, int data2) {
+		super();
+		this.data1 = data1;
+		this.data2 = data2;
+	}
+
+	@Override
+	public int compareTo(MyComparableClass o) {
+		if (data1 < o.data1) {
+			return -1;
+		} else if (data1 == o.data1) {
+			return 1;
+		}
+	}
+}
