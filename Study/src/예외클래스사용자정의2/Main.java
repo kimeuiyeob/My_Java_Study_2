@@ -1,6 +1,6 @@
 package 예외클래스사용자정의2;
 
-import 예외클래스사용자정의.A;
+import 예외클래스사용자정의1.A;
 
 public class Main {
 

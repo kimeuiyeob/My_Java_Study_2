@@ -1,0 +1,16 @@
+package 컬렉션프레임워크맵;
+
+public class TreeMapPractice {
+	
+	public static void main(String[] args) {
+		
+		//TreeMap<K,V>
+		/*
+		 * Map<K,V> 인터페이스를 구현한 구현 클래스 엔트리 집합의 형태로 관리하며 저장공간을 동적관리한다. 
+		 * 입력순서와 관계없이 key값이 크기순으로 출력된다. =>즉 키값은 대소비교가 가능해야한다.
+		 */
+		
+		
+	}
+
+}
