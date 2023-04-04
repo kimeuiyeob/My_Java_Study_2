@@ -1,0 +1,27 @@
+package 컬렉션프레임워크스택과큐;
+
+public class StackPractice2 {
+
+	public static void main(String[] args) {
+
+		A a = new A();
+		 a.abc();
+	}
+
+}
+
+class A {
+	public static void abc() {
+		int a = 3;
+		int b = 5;
+		System.out.println(a + " " + b);
+		bcd();
+	}
+
+	public static void bcd() {
+		int a = 9;
+		int b = 8;
+		System.out.println(a + " " + b);
+	}
+
+}

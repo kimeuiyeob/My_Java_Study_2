@@ -5,4 +5,7 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sun.tools.sjavac.server.SysInfo"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.tools.SysPropsDumper"/>
 </qualifiedTypeNameHistroy>
