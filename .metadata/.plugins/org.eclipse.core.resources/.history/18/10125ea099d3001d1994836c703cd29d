@@ -1,0 +1,11 @@
+package ¶÷´Ù½Ä;
+
+public class LambdaExpression implements A {
+
+	public static void main(String[] args) {
+
+	}
+
+interface A {
+	public void abc();
+}

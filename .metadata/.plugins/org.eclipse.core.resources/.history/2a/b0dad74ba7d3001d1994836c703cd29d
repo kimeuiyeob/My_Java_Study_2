@@ -1,0 +1,18 @@
+package ¶÷´Ù½Ä;
+
+public class LambdaPractice3 {
+	
+	public static void main(String[] args) {
+		
+		AAA a = new AAA() {
+			public void abc() {
+				System.out.println("¾È³ç");
+			}
+		};
+		  
+	}
+
+}
+interface AAA {
+	void abc();
+}

@@ -1,0 +1,26 @@
+package 람다식;
+
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+		
+		A a = new A() {
+			public void abc() {
+				System.out.println("이게 바로 익명클래스!!");
+			}
+		};
+		
+		a.abc();
+		
+		//람다식 문법
+		A lambda = () -> {
+			System.out.println("이게 바로 익명클래스!!");
+		};
+		
+
+	}
+}
+
+interface A {
+	public void abc();
+}

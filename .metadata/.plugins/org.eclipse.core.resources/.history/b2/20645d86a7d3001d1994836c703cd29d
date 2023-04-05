@@ -1,0 +1,26 @@
+package 람다식;
+
+public class LambdaPractice3 {
+
+	public static void main(String[] args) {
+
+		AAA a = new AAA() {
+			public void abc() {
+				BBB b = new BBB();
+				b.bcd();
+			}
+		};
+
+	}
+
+}
+
+interface AAA {
+	void abc();
+}
+
+class BBB {
+	void bcd() {
+		System.out.println("나는 클래스 BBB 메서드야");
+	}
+}

@@ -1,0 +1,19 @@
+package ¶÷´Ù½Ä;
+
+public class LambdaExpression implements A{
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+	@Override
+	public void abc() {
+		System.out.println("¾È³ç");
+		
+	}
+
+}
+interface A {
+	public void abc();
+}
