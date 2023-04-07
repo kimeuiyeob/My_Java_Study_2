@@ -1,0 +1,40 @@
+package 람다식;
+
+interface ABC {
+	void abc();
+}
+
+class BCD {
+	void bcd() {
+		System.out.println("클래스 B 메서드");
+	}
+}
+
+public class RefOfinstanceMethod_Type1_1 {
+	public static void main(String[] args) {
+		
+		//#1. 인스턴스 메서드 참조 익명이너클래스
+		ABC abc1 = new ABC() {
+			@Override
+			public void abc() {
+				BCD bcd1 = new BCD();
+				bcd1.bcd();
+			}
+		};
+		
+		
+		//#2. 람다식
+		ABC abc2 = () -> {
+			BCD bcd2 = new BCD();
+			bcd2.bcd();
+		};
+//		====================
+		
+		//#2. 인스턴스 메서드 참조
+		
+		
+		
+		
+
+	}
+}

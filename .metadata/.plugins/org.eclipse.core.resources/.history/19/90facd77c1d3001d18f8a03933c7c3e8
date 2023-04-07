@@ -1,0 +1,18 @@
+package ¶÷´Ù½Ä;
+
+interface C {
+	int abc(String str);
+}
+
+public class RefOfStaticMethod_Type2_2 {
+	public static void main(String[] args) {
+
+		C c = a -> {
+			if (a.equals("¾È³ç")) {
+				return 1;
+			} else {
+				return 2;
+			}
+		};
+	}
+}

@@ -7,6 +7,6 @@
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.sun.tools.sjavac.server.SysInfo"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.tools.SysPropsDumper"/>
     <fullyQualifiedTypeName name="람다식.BBB"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.tools.SysPropsDumper"/>
 </qualifiedTypeNameHistroy>

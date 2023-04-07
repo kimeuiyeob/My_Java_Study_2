@@ -67,7 +67,7 @@
 		<item key="showtypes" value="true"/>
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
-		<item key="DIALOG_X_ORIGIN" value="630"/>
+		<item key="DIALOG_X_ORIGIN" value="289"/>
 		<item key="DIALOG_Y_ORIGIN" value="79"/>
 		<item key="DIALOG_WIDTH" value="679"/>
 		<item key="DIALOG_HEIGHT" value="661"/>
