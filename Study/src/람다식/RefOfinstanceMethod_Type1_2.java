@@ -15,15 +15,14 @@ public class RefOfinstanceMethod_Type1_2 {
 			}
 		};
 		abcd1.abc(2);
-		
+
 		// 람다식
 		ABCD abcd2 = a -> System.out.println(a);
 		abcd2.abc(4);
-		
+
 		// 인스턴스 메서드 참조
 		ABCD abcd3 = System.out::println;
 		abcd3.abc(5);
-		
-		
+
 	}
 }
