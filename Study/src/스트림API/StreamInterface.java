@@ -1,23 +1,26 @@
 package 스트림API;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 public class StreamInterface {
 	public static void main(String[] args) {
-		
-		//Stream  API의 최상위 인터페이스는 BaseStream 인터페이스지만 직접 사용하는 경우는 없다.
-		//주로 사용하는 인터페이스는 Stream인터페이스이며 BaseStream을 상속하는 인터페이스이다.
-		//Stream 인터페이스는 여러 메소드들을 정의하고 있으며 많은 메소드들의 파라미터에 람다와 메소드 참조가 필요하다.
-		//Stream을 구현한 객체의 주요 특징은 불변성이며 Stream을 통해 얻은 결과는 새롭게 생성된 데이터이다.
-		
-		//		메소드									기능
-		//long count()						해당 스트림에 포함된 항목의 수를 반환
-		//Stream concat(Stream,Stream)		파라미터로 전달되는 두개의 스트림을 하나의 스트림으로 반환
-		//R collect(Collector)				스트림의 항목들을 컬렉션 타입의 객체로 반환
-		//Stream filter(Predicate)			스트림의 항목들을 파라미터의 조건에 따라 필터링하고 결과 항목들을 스트림 형태로 변환
-		//void forEach(Consumer)			스트림 항목돌에 대한 순회(반복)
-		//Optional reduce(BinaryOperator)	람다 표현식을 기반으로 데이터를 소모하고 그 결과를 반환(최종연산)
-		//Object[] toArray()				스트림 항목들을 배열 객체로 반환
-		//Stream sorted()					스트림 항목들에 대해 정렬하고 이를 스트림 형태로 변환
-		
-		
+
+		// 한가지 깨달은것! 한번 생성한 스트림은 사용후 다시 사용할수 없으며 전체 데이터에 대한 처리가 이루어지면 종료된다.
+		List<String> nameList = Arrays.asList("lee", "kim", "park", "hong", "choi", "song");
+
+		// 스트림은 컬렉션 객체에서 생성할수있다. nameList는 List객체즉 컬렉션객체로 만든것이므로
+		// .stream() 컬렉션에 default메소드로 있는 함수를 사용할수 있다.
+		Stream<String> strStream = nameList.stream();
+		strStream.forEach(i -> System.out.print(i + " "));
+
+		// 그래서 아래와같이 객체를 새롭게 생성하지 않으면 에러 발생한다.
+		Stream<String> strStream2 = nameList.stream();
+		strStream2.forEach(System.out::print);
+
+		// stream은 파이프형식 즉 메서드를 조합해서 쭉 조합해서 결과물을 만들어내기때문에
+		// 한번 스트림 객체를 생성해서 거기서 원하는 결과물을 만들지 스트림 객체를 하나또 만들어서 사용하는 경우는 드물다.
+
 	}
 }
