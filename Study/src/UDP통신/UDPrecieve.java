@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 public class UDPrecieve {
-
+	
 	public static void main(String[] args) {
 
 		System.out.println("<클라이언트B> - Text");
